@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input class="code" type="text" style="width: 1000px;">
+  <button class="decode">Decode</button>
+  <p class="result"></p>
+  <script>
+    const code = document.querySelector('.code');
+const decode = document.querySelector('.decode');
+const result = document.querySelector('.result');
+
+let code1 = [];
+decode.addEventListener('click', () => {
+  result.textContent = '';
+
+  code1 = code.value.split('');
+
+  code1.forEach(item => {
+    if (item === 'Ҵ') {
+      result.textContent = result.textContent + 'а';
+    } else if (item === 'ҵ') {
+      result.textContent = result.textContent + 'б';
+      
+    } else if (item === 'Ҷ' || item === 'Җ') {
+      result.textContent = result.textContent + 'в';
+      
+    } else if (item === 'ҷ') {
+      result.textContent = result.textContent + 'г';
+      
+    } else if (item === 'Ҹ') {
+      result.textContent = result.textContent + 'д';
+      
+    } else if (item === 'ҹ') {
+      result.textContent = result.textContent + 'е';
+      
+    } else if (item === '-') {
+      result.textContent = result.textContent + 'ё';
+      
+    } else if (item === 'Һ') {
+      result.textContent = result.textContent + 'ж';
+      
+    } else if (item === 'қ' || item === 'һ') {
+      result.textContent = result.textContent + 'з';
+      
+    } else if (item === 'Ҽ') {
+      result.textContent = result.textContent + 'и';
+      
+    } else if (item === 'ҽ') {
+      result.textContent = result.textContent + 'й';
+      
+    } else if (item === 'Ҿ') {
+      result.textContent = result.textContent + 'к';
+      
+    } else if (item === 'ҿ') {
+      result.textContent = result.textContent + 'л';
+      
+    } else if (item === 'Ӏ') {
+      result.textContent = result.textContent + 'м';
+      
+    } else if (item === 'Ӂ') {
+      result.textContent = result.textContent + 'н';
+      
+    } else if (item === 'ӂ') {
+      result.textContent = result.textContent + 'о';
+      
+    } else if (item === 'Ӄ' || item === 'ң') {
+      result.textContent = result.textContent + 'п';
+      
+    } else if (item === 'ӄ') {
+      result.textContent = result.textContent + 'р';
+      
+    } else if (item === 'Ӆ') {
+      result.textContent = result.textContent + 'с';
+      
+    } else if (item === 'ӆ') {
+      result.textContent = result.textContent + 'т';
+      
+    } else if (item === 'Ӈ') {
+      result.textContent = result.textContent + 'у';
+      
+    } else if (item === 'ӈ') {
+      result.textContent = result.textContent + 'ф';
+      
+    } else if (item === 'Ӊ') {
+      result.textContent = result.textContent + 'х';
+      
+    } else if (item === 'ӊ') {
+      result.textContent = result.textContent + 'ц';
+      
+    } else if (item === 'Ӌ') {
+      result.textContent = result.textContent + 'ч';
+      
+    } else if (item === 'ӌ') {
+      result.textContent = result.textContent + 'ш';
+      
+    } else if (item === 'Ӎ') {
+      result.textContent = result.textContent + 'щ';
+      
+    } else if (item === '-') {
+      result.textContent = result.textContent + 'ъ';
+      
+    } else if (item === 'ӏ') {
+      result.textContent = result.textContent + 'ы';
+      
+    } else if (item === 'Ӑ') {
+      result.textContent = result.textContent + 'ь';
+      
+    } else if (item === 'ӑ') {
+      result.textContent = result.textContent + 'э';
+      
+    } else if (item === 'Ӓ') {
+      result.textContent = result.textContent + 'ю';
+      
+    } else if (item === 'ӓ') {
+      result.textContent = result.textContent + 'я';
+      
+    } else if (item === 'e') {
+      result.textContent = result.textContent + ':';
+
+    } else if (item === '4') {
+      result.textContent = result.textContent + '0';
+      
+    } else if (item === '9') {
+      result.textContent = result.textContent + '5';
+
+    } else if(item === 'a') {
+      result.textContent = result.textContent + '6';
+    
+    } else {
+      result.textContent = result.textContent + ' ';
+
+    }
+  });
+
+});
+  </script>
+</body>
+</html>
